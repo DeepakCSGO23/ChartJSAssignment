@@ -7,6 +7,7 @@ import { Bar } from "react-chartjs-2";
 import Button from "./child/Button";
 import Select from "./child/Select";
 function App() {
+  //Parent contains all the state
   //To store api response Data
   const [userData, setUserData] = useState([]);
   //Index used to add new Data

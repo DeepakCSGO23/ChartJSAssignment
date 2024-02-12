@@ -7,7 +7,6 @@ function Select({ changeDataSet }) {
     const upArrow = document.querySelector(".arrow");
     //When the select field is focused
     if (target.id == "select" || target.className == "arrow") {
-      console.log("dropdown is pressed");
       upArrow.classList.add("downarrow");
     }
     //Select field is not focused
