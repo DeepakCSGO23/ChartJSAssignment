@@ -1,0 +1,71 @@
+//css variables
+$primaryColor:rgb(196, 193, 190);
+$secondryColor:rgb(120, 120, 156);
+$primaryFont:Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+//Body element styles
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: $primaryFont;
+    background-color: $primaryColor;
+}
+//Main Parent
+.parent-container{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    //Container for Select Element
+    .select-container{
+        position: relative;
+        left: 200px;
+        bottom: 0.7vh;
+        //Styles for Select Element
+        select{
+            position: absolute;
+            appearance: none;
+            height: 5vh;
+            width: 7vw;
+            font-size: 25px;
+            padding: 8px;
+            border-radius: 10px;
+        }
+        //Select Element on focusing
+        select:focus{
+            background-color: $secondryColor;
+        }
+        //Arrow icon
+        .arrow{
+            position: absolute;
+            left: 5.5vw;
+            top: 1vh;
+            cursor: pointer;
+        }
+        //Down Arrow icon onClicking select-container
+        .downarrow{
+            transform: rotate(180deg);
+            position: absolute;
+            top: 1.5vh;
+        }
+    }
+    .chart-area{
+        height: 90vh;
+        width: 90vw;  
+    }
+    //Add Data Button
+    button{
+       background-color: beige;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+        right: 30vh;
+        top: 4.5vh;
+        font-size: 25px;
+    }
+}
+
+
